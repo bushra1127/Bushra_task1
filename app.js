@@ -21,8 +21,8 @@ function sendProposal(btn){
 
 setTimeout(() =>{
     closeSheet();
-    /*btn.classList.remove("sent");
-    btn.innerHTML = "Connect";*/
+    btn.classList.remove("sent");
+    btn.innerText = "Connect";
 },1200);
 }
 
