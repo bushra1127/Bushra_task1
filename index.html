@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task</title>
+   <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <div class="card">
+         
+      <img src="images/Aarav.jpg" alt="">
+      
+      <div class="card-content">
+        <div class="name">Aarav Mehta</div>
+        <div class="match">94% Match</div>
+        <div class="tags">
+          <span>Tech</span><span>Startup</span>
+        </div>
+
+         <div class="stats-row">
+        <div class="stats">28k Followers | High Reach</div>
+
+        <div class="connect-icon" onclick="openSheet('Aarav Mehta')">
+          <i class="fa-solid fa-user-plus"></i>
+        </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- Card 2-->
+
+    <div class="card" onclick="openSheet('Kiara Khan')">
+      <img src="images/kiara.jpg" alt="">
+      <div class="card-content">
+        <div class="name">Kiara Khan</div>
+        <div class="match">90% Match</div>
+        <div class="tags">
+          <span>Fashion</span><span>Lifestyle</span>
+        </div>
+
+        <div class="stats-row">
+
+        <div class="stats">19k Followers | Engaged Audience</div>
+
+        <div class="connect-icon" onclick="openSheet('Kiara Singh')">
+          <i class="fa-solid fa-user-plus"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+
+    <div class="card">
+      <img src="images/arjun.jpg" alt="">
+      <div class="card-content">
+        <div class="name">Arjun Arora</div>
+        <div class="match">92% Match</div>
+        <div class="tags">
+          <span>Food</span><span>Travel</span>
+        </div>
+
+         <div class="stats-row">
+        <div class="stats">22k Followers | Strong Reach</div>
+
+        <div class="connect-icon" onclick="openSheet('Arjun Arora')">
+          <i class="fa-solid fa-user-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!-- Bottom Panel -->
+
+<div class="overlay" onclick="closeSheet()"></div>
+
+<div class="bottom-sheet" id="sheet">
+  <div class="handle"></div>
+  <h2 id="profileName"></h2>
+  <p style="margin: 15px 0;">Local influencer with high engagement and strong brand alignment.</p>
+  <button title="" class="connect-btn" onclick="sendProposal(this)">Connect</button>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
